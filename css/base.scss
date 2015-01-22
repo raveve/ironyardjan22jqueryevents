@@ -1,0 +1,386 @@
+$tuatara: #33332D;
+$rock-blue: #9FB4CC;
+$gin-fizz: #FFF8E3;
+$trinidad: #DB4105;
+$chino: #CCCC9E;
+$header-font: 'Pacifico', cursive;
+$body-font: 'Josefin Sans', sans-serif;
+
+@mixin bodyP ($fontsize: 18px, $text-align: left) {
+  text-align: $text-align;
+  font-size: $fontsize;
+  line-height: 1.2;
+  margin: 0 auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 20px;
+}
+
+@mixin marginLR ($marginL: 10%, $marginR: 10%) {
+  margin-left: $marginL;
+  margin-right: $marginR;
+}
+
+@mixin h2 ($fonts: 22px, $talign: center, $margint: 20px) {
+  font-size: $fonts;
+  text-align: $talign;
+  margin-top: $margint;
+}
+
+/*******************************
+BODY
+********************************/
+
+body {
+  background-color: $tuatara;
+  color: $rock-blue;
+  font-family: $body-font;
+}
+
+h2 {
+  @include h2();
+}
+
+p {
+  @include bodyP();
+}
+
+a {
+  text-decoration: none;
+  color: $rock-blue;
+}
+
+p > a {
+  font-style: italic;
+}
+
+a:hover {
+  color: $gin-fizz;
+}
+
+img, .photo_text {
+  border-radius: 100%;
+  width: 250px;
+  height: auto;
+}
+
+.photo_text p {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.photos {
+  display: inline-block;
+  margin: 20px 20px 60px 20px;
+  p {
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+  }
+}
+
+.photo_box {
+  margin-left: 275px;
+  margin-top: 50px;
+  margin-right: 150px;
+}
+
+
+/*******************************
+HEADER
+********************************/
+
+h1 {
+  color: $trinidad;
+  font-size: 64px;
+  font-family: $header-font;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+/*******************************
+FOOTER
+********************************/
+
+footer {
+  margin: 0 auto;
+  margin-top: 100px;
+  @include marginLR(20%, 20%);
+}
+
+
+footer p {
+  color: $chino;
+  font-style: italic;
+  font-size: 12px;
+  @include marginLR(20%, 20%);
+  text-align: center;
+}
+
+
+/*******************************
+3 COLUMN LAYOUT
+********************************/
+
+.photos {
+  display: inline-block;
+  width: 33%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.photo_box {
+  width: 80%;
+  @include marginLR();
+  margin-top: 50px;
+}
+
+img, .photos p {
+  width: 80%;
+  @include marginLR();
+}
+
+nav ul {
+  width: 60%;
+  @include marginLR(20%, 20%);
+}
+
+nav {
+  margin-top: 100px;
+}
+
+
+/*******************************
+TINY MEDIA QUERY
+********************************/
+
+@media screen and (max-width: 319px) {
+
+  h1 {
+    font-size: 32px;
+  }
+
+  nav {
+    li {
+      padding: 5px;
+    }
+
+    ul {
+      font-size: 16px;
+    }
+  }
+
+  nav {
+    margin-top: 50px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  img, .photos, .photo_text {
+    width: 80%;
+  }
+
+  .photo_box, .photos, .photo_text {
+    @include marginLR();
+  }
+
+  .photos p {
+    font-size: 14px;
+  }
+
+  footer p {
+    font-size: 10px;
+  }
+
+}
+
+/*******************************
+320PX MEDIA QUERY
+********************************/
+
+@media screen and (min-width: 320px) and
+(max-width: 479px) {
+
+  h1 {
+    font-size: 34px;
+  }
+
+  nav {
+    li {
+      padding: 5px;
+    }
+
+    ul {
+      font-size: 20px;
+    }
+  }
+
+  nav {
+    margin-top: 50px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  img, .photos, .photo_text {
+    width: 80%;
+  }
+
+  .photo_box, .photos, .photo_text {
+    @include marginLR();
+  }
+
+  .photos p {
+    font-size: 16px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+
+}
+
+/*******************************
+480PX MEDIA QUERY
+********************************/
+
+@media screen and (min-width: 480px) and
+(max-width: 599px) {
+
+  h1 {
+    font-size: 40px;
+  }
+
+  nav {
+    li {
+      padding: 5px;
+    }
+
+    ul {
+      font-size: 22px;
+    }
+  }
+
+  nav {
+    margin-top: 50px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  img, .photos, .photo_text {
+    width: 80%;
+  }
+
+  .photo_box, .photos, .photo_text {
+    @include marginLR();
+  }
+
+  .photos p {
+    font-size: 18px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+
+}
+
+/*******************************
+600PX MEDIA QUERY
+********************************/
+
+@media screen and (min-width: 600px) and
+(max-width: 767px) {
+
+  h1 {
+    font-size: 44px;
+  }
+
+  nav {
+    li {
+      padding: 5px;
+    }
+
+    ul {
+      font-size: 22px;
+    }
+  }
+
+  nav {
+    margin-top: 50px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  img, .photos, .photo_text {
+    width: 80%;
+  }
+
+  .photo_box, .photos, .photo_text {
+    @include marginLR();
+  }
+
+  .photos p {
+    font-size: 20px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+
+}
+
+/*******************************
+768PX MEDIA QUERY
+********************************/
+
+@media screen and (min-width: 768px) and
+(max-width: 991px) {
+
+  h1 {
+    font-size: 48px;
+  }
+
+  nav {
+    li {
+      padding: 5px;
+    }
+
+    ul {
+      font-size: 24px;
+    }
+  }
+
+  nav {
+    margin-top: 50px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  img, .photos, .photo_text {
+    width: 80%;
+  }
+
+  .photo_box, .photos, .photo_text {
+    @include marginLR();
+  }
+
+  .photos p {
+    font-size: 18px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+
+}
