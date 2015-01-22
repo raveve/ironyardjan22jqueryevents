@@ -2,33 +2,30 @@ jQuery(document).ready(function() {
 
 // EVENT 1
 
-$("h1").on("mouseover", function(){
-  console.log("change working");
-  $(this).css("background-color", "green");
+$("div").on("mouseenter", function(){
+  console.log("change 1 working");
+  $("h1").fadeIn(1000);
 });
 
-//$('.box').transition({
-  //perspective: '100px',
-  //rotateY: '180deg'
-//});
-
 // EVENT 2
-
-//$("ELEMENT/SELECTION").on("EVENT NAME", function(){
-
-//});
+$("img").eq(0).on("mouseout", function(){
+  console.log("change 2 working");
+  $("p").slideDown(1000);
+});
 
 // EVENT 3
 
-//$("ELEMENT/SELECTION").on("EVENT NAME", function(){
-
-//});
+$("img").eq(1).on("dblclick", function(){
+  console.log("change 3 working");
+  $(this).css("border", "5px solid #9FB4CC")
+});
 
 // EVENT 4
 
-//$("ELEMENT/SELECTION").on("EVENT NAME", function(){
-
-//});
+$("p").on("click", function(){
+  console.log("change 4 working");
+  $(this).css("color", "#FFF8E3")
+});
 
 // EVENT 5
 
@@ -62,9 +59,10 @@ $("h1").on("mouseover", function(){
 
 // EVENT 10
 
-//$("ELEMENT/SELECTION").on("EVENT NAME", function(){
-
-//});
+$("img").eq(5).on("mouseover", function(){
+  console.log("change 10 working");
+  $(this).fadeOut(3500);
+});
 
 
 });

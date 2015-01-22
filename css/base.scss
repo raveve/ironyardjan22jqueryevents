@@ -43,6 +43,7 @@ h2 {
 
 p {
   @include bodyP();
+  display: none;
 }
 
 a {
@@ -97,6 +98,7 @@ h1 {
   text-align: center;
   padding: 10px;
   margin: 0 auto;
+  display: none;
 }
 
 /*******************************

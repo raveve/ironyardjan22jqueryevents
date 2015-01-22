@@ -18,7 +18,8 @@ p {
   margin: 0 auto;
   margin-left: 10%;
   margin-right: 10%;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  display: none; }
 
 a {
   text-decoration: none;
@@ -61,7 +62,8 @@ h1 {
   font-family: 'Pacifico', cursive;
   text-align: center;
   padding: 10px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: none; }
 
 /*******************************
 FOOTER
