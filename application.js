@@ -46,14 +46,16 @@ $(window).on("resize", function(){
 
 $("img").eq(2).on("mouseleave", function(){
   console.log("event 7 working");
-  $(this).animate({ width: "50%" }, 1000 );
+  $(this).animate({ width: "50%" }, 1000);
 });
 
 // EVENT 8
 
-//$("ELEMENT/SELECTION").on("EVENT NAME", function(){
-
-//});
+$("a").on("mouseover", function(){
+  console.log("event 8 working");
+  $(this).animate({ width: "100%" }, 1000);
+  console.log(event.relatedTarget.nodeName);
+});
 
 // EVENT 9
 
@@ -61,14 +63,14 @@ $("p").eq(2).on("mousedown", function(){
   console.log("event 9 working");
   $(this).css("text-decoration", "line-through");
   $(this).on("mouseup", function(){
-    $(this).css("text-decoration", "none");
+  $(this).css("text-decoration", "none");
   });
 });
 
 // EVENT 10
 
 $("img").eq(5).on("mouseover", function(){
-  console.log("change 10 working");
+  console.log("event 10 working");
   $(this).fadeOut(3500);
 });
 
