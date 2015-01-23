@@ -143,16 +143,6 @@ img, .photos p {
   @include marginLR();
 }
 
-nav ul {
-  width: 60%;
-  @include marginLR(20%, 20%);
-}
-
-nav {
-  margin-top: 100px;
-}
-
-
 /*******************************
 TINY MEDIA QUERY
 ********************************/
@@ -161,20 +151,6 @@ TINY MEDIA QUERY
 
   h1 {
     font-size: 32px;
-  }
-
-  nav {
-    li {
-      padding: 5px;
-    }
-
-    ul {
-      font-size: 16px;
-    }
-  }
-
-  nav {
-    margin-top: 50px;
   }
 
   h2 {
@@ -210,20 +186,6 @@ TINY MEDIA QUERY
     font-size: 34px;
   }
 
-  nav {
-    li {
-      padding: 5px;
-    }
-
-    ul {
-      font-size: 20px;
-    }
-  }
-
-  nav {
-    margin-top: 50px;
-  }
-
   h2 {
     font-size: 18px;
   }
@@ -255,20 +217,6 @@ TINY MEDIA QUERY
 
   h1 {
     font-size: 40px;
-  }
-
-  nav {
-    li {
-      padding: 5px;
-    }
-
-    ul {
-      font-size: 22px;
-    }
-  }
-
-  nav {
-    margin-top: 50px;
   }
 
   h2 {
@@ -304,20 +252,6 @@ TINY MEDIA QUERY
     font-size: 44px;
   }
 
-  nav {
-    li {
-      padding: 5px;
-    }
-
-    ul {
-      font-size: 22px;
-    }
-  }
-
-  nav {
-    margin-top: 50px;
-  }
-
   h2 {
     font-size: 22px;
   }
@@ -349,20 +283,6 @@ TINY MEDIA QUERY
 
   h1 {
     font-size: 48px;
-  }
-
-  nav {
-    li {
-      padding: 5px;
-    }
-
-    ul {
-      font-size: 24px;
-    }
-  }
-
-  nav {
-    margin-top: 50px;
   }
 
   h2 {

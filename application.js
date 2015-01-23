@@ -44,8 +44,10 @@ $(window).on("resize", function(){
 
 // EVENT 7
 
-//$("ELEMENT/SELECTION").on("EVENT NAME", function(){
-//});
+$("img").eq(2).on("mouseleave", function(){
+  console.log("event 7 working");
+  $(this).animate({ width: "50%" }, 1000 );
+});
 
 // EVENT 8
 

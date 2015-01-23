@@ -102,26 +102,12 @@ img, .photos p {
   margin-left: 10%;
   margin-right: 10%; }
 
-nav ul {
-  width: 60%;
-  margin-left: 20%;
-  margin-right: 20%; }
-
-nav {
-  margin-top: 100px; }
-
 /*******************************
 TINY MEDIA QUERY
 ********************************/
 @media screen and (max-width: 319px) {
   h1 {
     font-size: 32px; }
-  nav li {
-    padding: 5px; }
-  nav ul {
-    font-size: 16px; }
-  nav {
-    margin-top: 50px; }
   h2 {
     font-size: 18px; }
   img, .photos, .photo_text {
@@ -140,12 +126,6 @@ TINY MEDIA QUERY
 @media screen and (min-width: 320px) and (max-width: 479px) {
   h1 {
     font-size: 34px; }
-  nav li {
-    padding: 5px; }
-  nav ul {
-    font-size: 20px; }
-  nav {
-    margin-top: 50px; }
   h2 {
     font-size: 18px; }
   img, .photos, .photo_text {
@@ -164,12 +144,6 @@ TINY MEDIA QUERY
 @media screen and (min-width: 480px) and (max-width: 599px) {
   h1 {
     font-size: 40px; }
-  nav li {
-    padding: 5px; }
-  nav ul {
-    font-size: 22px; }
-  nav {
-    margin-top: 50px; }
   h2 {
     font-size: 20px; }
   img, .photos, .photo_text {
@@ -188,12 +162,6 @@ TINY MEDIA QUERY
 @media screen and (min-width: 600px) and (max-width: 767px) {
   h1 {
     font-size: 44px; }
-  nav li {
-    padding: 5px; }
-  nav ul {
-    font-size: 22px; }
-  nav {
-    margin-top: 50px; }
   h2 {
     font-size: 22px; }
   img, .photos, .photo_text {
@@ -212,12 +180,6 @@ TINY MEDIA QUERY
 @media screen and (min-width: 768px) and (max-width: 991px) {
   h1 {
     font-size: 48px; }
-  nav li {
-    padding: 5px; }
-  nav ul {
-    font-size: 24px; }
-  nav {
-    margin-top: 50px; }
   h2 {
     font-size: 26px; }
   img, .photos, .photo_text {
